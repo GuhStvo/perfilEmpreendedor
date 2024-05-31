@@ -90,7 +90,7 @@ body {
     color: var(--azul-escuro);
 }
 
-button {
+#botaoProximo {
     background-color: var(--azul-escuro);
     color: var(--branco-padrao);
     display: flex;
@@ -102,12 +102,17 @@ button {
     border-radius: 50px;
     margin: 137px auto 0;
     z-index: 1000;
+    transition: 200ms;
 }
 
-button:hover {
+#botaoProximo:hover {
     opacity: 95%;
 }
 
-button img {
+#botaoProximo:active {
+    scale: 0.95;
+}
+
+#botaoProximo img {
     margin-left: 8px;
 }
