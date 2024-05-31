@@ -1,9 +1,13 @@
-$(document).ready(function(){
+$(document).ready(function () {
     $('#containerEntry').slick({
         dots: true,
-        arrows: true, // Desativamos as setas internas do Slick Slider
+        arrows: false,
         infinite: false,
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+    });
+
+    $('#botaoProximo').click(function () {
+        $('#containerEntry').slick('slickNext');
     });
 });
