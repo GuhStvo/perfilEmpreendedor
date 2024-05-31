@@ -37,6 +37,13 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    animation: entryAnimation 2.5s ease;
+}
+
+#containerEntry {
+    text-align: center;
+    margin: 0;
 }
 
 #pularParaPerfil {
@@ -58,10 +65,6 @@ body {
     transform: scale(0.98);
 }
 
-#containerEntry {
-    text-align: center;
-    margin: 0;
-}
 
 .frame>h2 {
     color: var(--preto-padrao);
@@ -76,6 +79,7 @@ body {
 .mensagem>img {
     width: 63px;
     margin: 8px auto 0;
+    transition: 300ms;
 }
 
 .mensagem>p {
@@ -103,16 +107,36 @@ body {
     margin: 137px auto 0;
     z-index: 1000;
     transition: 200ms;
+    cursor: url("../assets/chevron_right.svg"), auto;
 }
 
 #botaoProximo:hover {
     opacity: 95%;
+    scale: 1.02;
 }
 
 #botaoProximo:active {
     scale: 0.95;
-}
+} 
 
 #botaoProximo img {
     margin-left: 8px;
+    transition: 200ms;
+}
+
+#btnProximoText {
+    transition: 200ms;
+}
+
+#btnProximoText, #pularParaPerfil {
+    transition: opacity 0.5s ease-in-out;
+}
+
+@keyframes entryAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
