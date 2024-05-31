@@ -30,6 +30,7 @@ body {
     max-width: 100vw;
     max-height: 100vh;
     overflow-x: hidden;
+    animation: entryAnimation 2.5s ease;
 }
 
 #page {
@@ -37,8 +38,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-
-    animation: entryAnimation 2.5s ease;
 }
 
 #containerEntry {
