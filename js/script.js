@@ -21,7 +21,7 @@ $(document).ready(function () {
             
             // Atualize o link para redirecionar apenas quando o botão for clicado
             $('#botaoProximo').off('click').on('click', function(){
-                window.location.href = "../pages/login.html";
+                window.location.href = "/pages/login.html";
             });
             
         } else {
