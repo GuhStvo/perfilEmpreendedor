@@ -17,7 +17,7 @@ $(document).ready(function () {
     $('#containerEntry').on('afterChange', function(event, slick, currentSlide){
         if (currentSlide === 2) {
             $('#btnProximoText').html("Login"); /* Seria o "InnerHTML" */
-            $('#pularParaPerfil').hide(); /* Mostrar */
+            $('#pularParaPerfil').hide(); 
             
             // Atualize o link para redirecionar apenas quando o botão for clicado
             $('#botaoProximo').off('click').on('click', function(){
@@ -26,7 +26,7 @@ $(document).ready(function () {
             
         } else {
             $('#btnProximoText').html("Avançar");
-            $('#pularParaPerfil').show(); /* Esconder */
+            $('#pularParaPerfil').show(); /* Mostrar */
             
             // Atualize o link para avançar o slide quando o botão for clicado
             $('#botaoProximo').off('click').on('click', function () {
