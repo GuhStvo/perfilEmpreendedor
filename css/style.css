@@ -141,10 +141,9 @@ body {
 
 /* Formulário */
 main {
-    height: 100vh;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
 
 
@@ -152,6 +151,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 45px;
+    min-width: 342.562px;
 }
 
 .formulario {
@@ -217,7 +217,7 @@ main {
 }
 
 .otherOption {
-    border-top: 1px solid black;
+    border-top: 2px solid black;
     padding-top: 35px;
 
     p {

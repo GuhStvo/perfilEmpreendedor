@@ -13,7 +13,7 @@
 <body>
 
     <header>
-        <a href="../index.html" class="back-page">
+        <a href="./login.html" class="back-page">
             <img src="../assets/chevron_left.svg" alt="Icone">
             Voltar
         </a>
@@ -23,29 +23,29 @@
         <div id="wrapperForms">
             <form action="#" class="formulario">
                 <fieldset>
-                    <legend>Acessar conta</legend>
+                    <legend>Criar conta</legend>
+                    <div class="input-wrapper">
+                        <label for="nomeUser">Nome:</label>
+                        <input type="text" id="nomeUser" required placeholder="Insira seu nome">
+                    </div>
                     <div class="input-wrapper">
                         <label for="userEmail">Usuário:</label>
                         <input type="email" id="userEmail" required placeholder="Insira seu e-mail">
                     </div>
                     <div class="input-wrapper">
-                        <div>
-                            <label for="userPassword">Senha:</label>
-                            <a href="#">Esqueci a senha</a>
-                        </div>
-                        <input type="password" id="userPassword" required placeholder="Insira seu senha">
+                        <label for="createPassword">Criar senha:</label>
+                        <input type="password" id="createPassword" placeholder="Criar senha">
                     </div>
-                    <button type="submit">Logar</button>
+                    <div class="input-wrapper">
+                        <label for="repeatPassword">Repetir senha:</label>
+                        <input type="password" id="repeatPassword" placeholder="Repita a senha">
+                    </div>
+                    <button type="submit">Cadastrar</button>
                 </fieldset>
             </form>
 
-            <div class="otherOption">
-                <p>Caso ainda não tenha uma conta</p>
-                <a href="criarConta.html">Criar conta</a>
-            </div>
         </div>
     </main>
-
 </body>
 
 </html>
