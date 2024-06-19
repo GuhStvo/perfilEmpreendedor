@@ -14,6 +14,7 @@
     --azul-claro: #7FA1BF;
     --preto-padrao: #1E1E1E;
     --branco-padrao: #ECF0F1;
+
     /* Cores padrão armazenadas */
     --preto: #000;
     --branco: #fff;
@@ -22,7 +23,9 @@
     --margin-44px: 10.281%;
 
     /* Fonts padrões */
-    --titulos-font: 32px;
+    --titulos-size: 32px;
+    --subtitulos-size: 17.5px;
+
     /* Tempo de animação padrão para hover */
     --transition-time: 200ms;
 }
@@ -93,6 +96,7 @@ body {
     font-weight: 600;
     max-width: 550px;
     margin: 0 auto;
+    padding: 0 4%;
 }
 
 .mensagem>p span {
@@ -163,7 +167,7 @@ main {
         legend {
             margin-bottom: 50px;
             text-align: center;
-            font-size: var(--titulos-font);
+            font-size: var(--titulos-size);
             font-weight: 600;
         }
 
