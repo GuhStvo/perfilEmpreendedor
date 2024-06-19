@@ -182,13 +182,14 @@ main {
             margin-top: 10px;
             min-width: 142px;
             height: 39px;
-            padding: 0 10px;
+            padding: 25px 10px;
+            display: grid;
+            place-content: center;
 
             background-color: var(--azul-escuro);
             border: 0;
             border-radius: 50px;
             color: var(--branco-padrao);
-            text-align: center;
             font-size: 20px;
             font-weight: 600;
             cursor: pointer;
