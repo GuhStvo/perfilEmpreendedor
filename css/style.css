@@ -42,6 +42,10 @@ body {
     animation: entryAnimation 2.5s ease;
 }
 
+a {
+    -webkit-tap-highlight-color: transparent; /* for removing the highlight */
+}
+
 #page {
     height: 100vh;
     display: flex;
@@ -300,6 +304,8 @@ main {
 }
 
 .btn {
+    padding: 0 10px;
+    height: 83px;
     display: flex;
     align-items: center;
     gap: 10px;

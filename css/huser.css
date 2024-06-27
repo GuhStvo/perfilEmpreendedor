@@ -49,6 +49,10 @@ header {
     display: flex;
     align-items: center;
     gap: 42px;
+
+    a {
+        transition: var(--transition-time);
+    }
     h2 {
         color: var(--branco-padrao);
         cursor: default;
