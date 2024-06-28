@@ -46,6 +46,10 @@ a {
     -webkit-tap-highlight-color: transparent; /* for removing the highlight */
 }
 
+p, h1, h2 {
+    cursor: default;
+}
+
 #page {
     height: 100vh;
     display: flex;
@@ -327,6 +331,19 @@ main {
     scale: 0.99;
 }
 
+/* Página Configuração do usuário */
+
+#userName-config {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h2 {
+        font-size: 32px;
+        font-weight: 300;
+    }
+}
+
 /* Animação de entrada */
 @keyframes entryAnimation {
     0% {
@@ -338,6 +355,10 @@ main {
 }
 
  /* Alterações para DESKTOP */
-@media screen and (min-widht: 890px){
-    
+@media screen and ( min-width: 890px){
+    #page_user { /* TAG MAIN da página */
+        display: flex;
+        width: 566px;
+        margin: 0 auto;
+    }
 }

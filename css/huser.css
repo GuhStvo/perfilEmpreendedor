@@ -44,11 +44,13 @@ body {
 
 header {
     padding: 0 3%;
-    height: 90px;
     background-color: var(--azul-escuro);
-    display: flex;
-    align-items: center;
-    gap: 42px;
+    div {
+        display: flex;
+        align-items: center;
+        gap: 42px;
+        height: 90px;
+    }
 
     a {
         transition: var(--transition-time);
@@ -59,5 +61,21 @@ header {
         font-size: 32px;
         font-style: normal;
         font-weight: 500;
+    }
+}
+
+ /* Alterações para DESKTOP */
+ @media screen and ( min-width: 890px){
+    header {
+        padding: 0 3%;
+        background-color: var(--azul-escuro);
+        div {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 566px;
+            height: 90px;
+            margin: 0 auto;
+        }
     }
 }
